@@ -10,7 +10,7 @@ int main() {
   string data;
   int length;
   string tok;
-  string str;
+  string stri;
 
   ifstream inStream;
   inStream.open("src.beep");
@@ -28,9 +28,9 @@ int main() {
       tok = "";
     }
     else {
-      str = "";
-      str += tok;
+      stri = "";
+      stri += tok;
     }
   }
-  cout << str << endl;
+  cout << stri << endl;
 }
