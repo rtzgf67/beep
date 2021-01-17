@@ -24,7 +24,7 @@ int main() {
     if (tok == "bout") {
       tok = "";
     }
-    else if (tok == "::") {
+    else if (tok == "-->") {
       tok = "";
     }
     else {
