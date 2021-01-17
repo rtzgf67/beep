@@ -1,3 +1,5 @@
+//This is the last update in Alpha version! Beta will be closed to the public
+
 #include <iostream>
 #include <fstream>
 #include <string>
