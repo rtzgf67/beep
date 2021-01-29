@@ -13,6 +13,9 @@ int main() {
   int length;
   string tok;
   string stri;
+  int dtree;
+  int idtree;
+  int sidtree;
 
   ifstream inStream;
   inStream.open("src.beep");
@@ -23,16 +26,29 @@ int main() {
   for (int i; i < length; i++) {
     tok += data[i];
 
+    // Desizion Tree strats here:
+
     if (tok == "bout") {
       tok = "";
+      dtree = 1;
     }
-    else if (tok == "-->") {
+    else if (tok == "riruraru") {
       tok = "";
+      while (true) {
+        cout << "riruraru" << endl;
+      }
     }
-    else {
-      stri = "";
-      stri += tok;
+    else if (dtree == 1) {
+      if (tok == "=>") {
+        tok = "";
+        idtree = 1;
+      }
+      else if (idtree == 1) {
+        stri = "";
+        stri += tok;
+      }
     }
+
   }
   cout << stri << endl;
 }
